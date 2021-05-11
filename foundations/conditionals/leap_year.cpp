@@ -12,12 +12,29 @@ If that year is evenly divisible by 400, then it is a leap year.*/
 #include <iostream>
 using namespace std;
 
-int main(){
-    int year = 40;
-    float year_by_4 = year / 4;
-   // year = 20;
-    cout << year_by_4;
-    /*cout << "Type year here: "; //user to type number and press enter
-    cin >> year; // user input here */
-
+int main() {
+ 
+  int y = 0;
+ 
+  std::cout << "Enter year: ";
+  std::cin >> y;
+ 
+  if (y < 1000 || y > 9999) {
+ 
+    std::cout << "Invalid entry.\n";
+ 
+  }
+  else if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
+ 
+    std::cout << y;
+    std::cout << " falls on a leap year.\n";
+ 
+  }
+  else {
+ 
+    std::cout << y;
+    std::cout << " is not a leap year.\n";
+ 
+  }
+ 
 }
