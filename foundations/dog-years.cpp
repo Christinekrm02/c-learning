@@ -15,6 +15,6 @@ int main(){
      human_years = early_years + later_years;
 
      std::cout << "My name is Hero and I am " << dog_age << "years old. ";
-     std::cout << "In human years, I am " << human_years << "years. \n";
+     std::cout << "In human years, I am " << human_years << " years. \n";
 
 }
